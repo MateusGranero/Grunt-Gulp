@@ -1,0 +1,20 @@
+{
+  "name": "estudos-bower",
+  "description": "Projeto para estudos de Bower",
+  "main": "index.js",
+  "authors": [
+    "Mateus Granero"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "\"\""
+  ],
+  "homepage": "https://github.com/MateusGranero/Grunt-Gulp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
