@@ -6,7 +6,7 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($sc
     var generateSerial = function(contatos) {
         contatos.forEach(function(item) {
             item.serial = serialGenerator.generate();
-        })
+        });
     };
 
     $scope.adicionarContato = function(contato) {

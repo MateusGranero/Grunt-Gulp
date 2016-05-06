@@ -10,8 +10,8 @@ angular.module("listaTelefonica").directive("uiAccordions",function(){
             this.closeAll =function(){
                 accordions.forEach(function(accordion){
                     accordion.isOpened = false;
-                })
-            }
+                });
+            };
         }    
     };
 });
@@ -28,8 +28,8 @@ angular.module("listaTelefonica").directive("uiAccordion",function(){
           ctrl.registerAccordion(scope);
           scope.open = function(){
               ctrl.closeAll();
-              scope.isOpened = !scope.isOpened
-          }
+              scope.isOpened = !scope.isOpened;
+          };
       }
    } ;
 });

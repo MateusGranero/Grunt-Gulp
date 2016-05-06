@@ -3,7 +3,7 @@ angular.module("listaTelefonica").provider("serialGenerator",function(){
     
     this.getLength = function () {
         return _length;
-    }
+    };
     
     this.setLength = function (length) {
         _length = length;
@@ -14,10 +14,10 @@ angular.module("listaTelefonica").provider("serialGenerator",function(){
             generate:function(){
                var serial = "";
                 while (serial.length < _length) {
-                    serial += String.fromCharCode(Math.floor(Math.random() * 64) + 32)
-                };
-                return serial 
+                    serial += String.fromCharCode(Math.floor(Math.random() * 64) + 32);
+                }
+                return serial; 
             }
-        }
-    }
-})
+        };
+    };
+});

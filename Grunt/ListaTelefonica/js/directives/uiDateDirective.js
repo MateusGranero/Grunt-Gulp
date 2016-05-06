@@ -3,7 +3,7 @@ angular.module("listaTelefonica").directive("uiDate",function($filter){
        require: "ngModel",
        link: function(scope,element,attrs,ctrl){
            var _formatDate = function(date){
-               console.log(date)
+               console.log(date);
                date = date.replace(/[^0-9]+/g,"");
                if(date.length > 2){
                    date = date.substring(0,2) + "/" + date.substring(2);
@@ -23,7 +23,7 @@ angular.module("listaTelefonica").directive("uiDate",function($filter){
            
            ctrl.$parsers.push(function(value){
                if(value.length === 10){
-                   var dateArray = value.split("/")
+                   var dateArray = value.split("/");
                    return new Date(dateArray[2],dateArray[1]-1,dateArray[0]).getTime();
                }
            });
